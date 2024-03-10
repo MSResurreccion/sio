@@ -1,0 +1,605 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ 
+ 
+<!------------------------------------------------------------------
+ 
+            LUNA // all-in-one page by jaebium.tumblr.com
+ 
+            - dont steal
+            - dont remove credit
+            - ask me if you have any issues
+ 
+-------------------------------------------------------------------->
+ 
+<title>simoun / atlas</title>
+<link rel="shortcut icon" href="https://i.pinimg.com/564x/e5/48/95/e548956f96ca62ec62eec093c1400092.jpg" />
+<link rel="alternate" type="application/rss+xml" href="https://siuresu.tumblr.com/rss" />
+{block:Description}<meta name="description" content="{MetaDescription}"/>{/block:Description}
+ 
+<!----jquery--->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript"
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+ 
+<!---tooltip--->
+ 
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:0,
+tip_fade_speed:300,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<!-----google fonts---->
+ 
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,300italic,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+ 
+<link href='https://fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+ 
+ 
+<style type="text/css">
+ 
+/*---tumblr controls---*/
+.tmblr-iframe {
+white-space:nowrap; filter: invert(100%); -webkit-filter: invert(100%); -moz-filter: invert(100%); -o-filter: invert(100%); -ms-filter: invert(100%);opacity:1;
+}
+.tmblr-iframe {
+position:fixed !important;
+-webkit-filter: invert(100%)}
+ 
+/*----tooltip----*/
+ 
+#s-m-t-tooltip {
+    position:absolute;
+    color:#787878;
+    background-color:rgba(255,255,255,.95);
+    border-radius:2px;
+    margin-top:20px;
+    margin-left:10px;
+    border:1px solid #f0f0f0;
+    max-width:300px;
+    z-index:9;
+    font-size:8px;
+    letter-spacing:1px;
+    font-family:'open sans', sans-serif;
+    padding:2px 5px;
+    text-transform:uppercase;
+}
+ 
+/*------scrollbar------*/
+ 
+::-webkit-scrollbar {
+    width: 14px; height: 3px; background: white;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border:6px solid white;
+    background-color:#f0f0f0; 
+    border-radius:15px;
+}
+ 
+/*---body--*/
+ 
+body {
+    margin:0;
+    line-height:17px;
+    background:#242323;
+    color:#424242;
+    font-size:11px;
+    font-family:'karla', sans-serif, arial, trebuchet ms, calibri;
+    font-weight:400;
+}
+ 
+a {
+    text-decoration:none;
+    color:#888;
+    -webkit-transition:0.6s all;
+    -moz-transition:0.6s all;
+    -o-transition:0.6s all;
+    transition:0.6s all;
+}
+ 
+a:hover {
+    color:#000000;
+    cursor:help;
+}
+ 
+h2 {
+    font-weight:300;
+    letter-spacing:1px;
+    font-size:21px;
+    color:#000;
+    margin-bottom:45px;
+}
+ 
+.header2 {
+    /*accent color*/
+    border-bottom:1px solid #000;
+    padding-bottom:8px;
+}
+ 
+blockquote {
+    border-left:2px solid #e0e0e0;
+    margin-left:0px;
+    padding-left:20px;
+    max-width: 100%;
+}
+ 
+/*----content----*/
+ 
+#center {
+    position:absolute;
+    width:640px;
+    height:460px;
+    left:50%;
+    border:1px solid #f0f0f0;
+    top:50%;
+    overflow:hidden;
+    margin-left:-320px;
+    margin-top:-250px;
+}
+ 
+#content {
+    background:white;
+    padding:32px 43px;
+    border-top:4px solid white;
+    border-bottom:4px solid white;
+    overflow-x:auto;
+    height:388px;
+    width:378px;
+    float:right;
+}
+ 
+ 
+#headr {
+    padding:15px 35px;
+    margin-top:2px;
+    width:104px;
+    background:white;
+    height:100%;
+    text-align:center;
+    float:left;
+    border-bottom:10px solid #f8f8f8;
+}
+ 
+.first-link:before {content:'1 : ';display:inline;}
+.second-link:before {content:'2 : ';display:inline;}
+.third-link:before {content:'3 : ';display:inline;}
+.fourth-link:before {content:'4 : ';display:inline;}
+ 
+#tabs-bar ul { 
+    display: block;
+	list-style-type: none;
+	text-align:left;
+	margin:0px;
+    padding:0px;
+    font-family:'open sans', sans-serif;
+}
+#tabs-bar ul li {  
+	list-style-type: none;
+	display: block;
+	margin:0px;
+    padding:0px;
+}
+ 
+#tabs-nav li a {
+    list-style-type: none;
+    text-transform:uppercase;
+    font-size:9px;
+    letter-spacing:1px;
+    display: block;
+    border-bottom:1px solid #f0f0f0;
+    padding:19px 0px;
+    text-decoration: none;
+}  
+ 
+#tabs-nav li a.current {
+    /*accent colors*/
+    border-bottom:1px solid #000;
+    color:#000;
+    /**/
+    padding-left:4px;
+}
+ 
+#tabs-nav li a:hover {
+    border-bottom:1px solid #d0d0d0;
+    color:#000;
+    padding-left:4px;
+}
+ 
+#tabs-content-wrap { 
+	list-style-type: none;
+}
+ 
+#tabs-content-wrap ul { 
+    display: block;
+	list-style-type: none;
+	padding:0px 15px;
+	margin:0px;
+}
+#tabs-content-wrap ul li { 
+    width: 100%; 
+	list-style-type: none;
+	display: block;
+}
+ 
+.tab-content { 
+	border-radius: 2px;
+	padding-bottom: 20px;
+}
+ 
+/*links content*/
+ 
+.links-wrap {
+    margin-top:30px;
+    font-family:'open sans', sans-serif;
+    font-weight:300;
+    line-height:22px;
+}
+ 
+.links-title {
+    display:inline;
+    color:#000;
+    padding-right:5px;
+    font-weight:300;
+    padding-bottom:15px;
+    letter-spacing:1px;
+    font-size:11px;
+    text-transform:uppercase;
+}
+ 
+.links {
+    display:inline;
+    font-size:11px;
+}
+ 
+.links a {
+    margin-right:7px;
+}
+ 
+/*F.A.Q. content*/
+ 
+.question {
+    letter-spacing:1px;
+    font-size:9px;
+    padding:10px 0px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+}
+ 
+.question::before {
+    content: '?';
+    /*accent colors*/
+    border:1px solid #000;
+    color:#000;
+    /**/
+    float:left;
+    font-family:arial;
+    font-size:9px;
+    font-weight:bold;
+    padding:1px 6px;
+    margin-top:-3px;
+    border-radius:20px;
+    margin-right:10px;
+}
+ 
+.answer {
+    background:#fbfbfb;
+    border-left:1px solid #f0f0f0;
+    padding:15px 15px;
+    margin-bottom:30px;
+    font-size:10px;
+ 
+}
+ 
+/*blogroll content*/
+ 
+#br {
+    width:370px;
+    text-align-last:center;
+}
+ 
+#following {
+    font-size:10px;
+    background:#fff;
+    height:40px;
+    width:40px;
+    float:left;
+    margin-right:15px;
+    margin-bottom:15px;
+}
+ 
+.followedname {
+    font-weight:600;
+    font-size:10px;
+}
+ 
+.followedtitle {
+    font-style:italic;
+    font-size:7px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin-top:0px;
+}
+ 
+#following img {
+    width:40px;
+    border-radius:40px;
+    opacity:.9;
+    padding:5px;
+    background:#fbfbfb;
+    float:left;
+    -webkit-filter: Grayscale(20%);
+    -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+ 
+#following:hover img {
+    opacity:1;
+    -webkit-filter: Grayscale(0%);
+}
+ 
+/*-ask box-*/
+ 
+#ask-box {
+    border-top:1px solid #f0f0f0;
+    padding-top:10px;
+}
+ 
+/*sidebar picture*/
+ 
+#pic {
+    width:70px;
+    padding:52px;
+    background:white;
+    text-align:center;
+}
+ 
+#pic img {
+    width:65px;
+    height:65px;
+    border-radius:60px;
+    opacity:.7;
+    -webkit-transition:0.7s all;
+    -moz-transition:0.7s all;
+    -o-transition:0.7s all;
+    transition:0.7s all;
+}
+ 
+#pic img:hover {
+    opacity:.9;
+    -webkit-transition:0.5s all;
+    -moz-transition:0.5s all;
+    -o-transition:0.5s all;
+    transition:0.5s all;
+}
+ 
+/*---navi---*/
+#navi {
+    width:640px;
+    top:50%;
+    margin-top:250px;
+    left:50%;
+    margin-left:-320px;
+    position:absolute;
+    text-align:center;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    word-spacing:10px;
+}
+ 
+/*---credit---*/
+ 
+#credit {
+    position:fixed;
+    font-size:7px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    text-align:right;
+    font-family:arial, trebuchet ms;
+}
+ 
+#credit {
+    bottom:20px;
+    right:20px;
+    font-weight:bold;
+}
+ 
+#credit a {
+    padding:4px 5px;
+    border:1px solid #f0f0f0;
+    border-radius:2px;
+    background:white;
+}
+ 
+#credit a:hover {
+    border:1px solid #d0d0d0;
+}
+ 
+ 
+{CustomCSS}</style>
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+ 
+<script>
+$(document).ready(function(){
+$(function () {
+  $('.tab-content:not(:first)').hide();
+   $('#tabs-nav a').bind('click', function (e) {
+    e.preventDefault();
+    $this = $(this);
+    $target = $(this.hash);
+    $('#tabs-nav a.current').removeClass('current');
+    $('.tab-content:visible').fadeOut("normal", function () {
+        $this.addClass('current');
+        $target.fadeIn("normal");
+    });
+  }).filter(':first').click();
+});
+});
+</script>
+ 
+</head><body>
+ 
+<div id="center">
+<div id="content">
+<div id="tabs-content-wrap">
+ 
+<ul>
+ 
+    <!--------------ABOUT ME CONTENT-------------->
+    <li id="t1" class="tab-content">
+ 
+        <h2><span class="header2">About Me</span> <!--u can put your name after a "/" here if you want---> </h2>
+ 
+        <p>i'm simoun but you could call me kaiko (has no correlation with each other whatsoever).</p>
+ 
+        <p>i don't want to be a part of the mainstream socmeds (i literally use ig tho so idk) right now so i'm hangin out with the oldies on tumblr :3.</p>
+ 
+        <p>i love krnb and music like that and i listen to opm too.</p>
+ 
+        <p>i'm a yapper... (the best yapper in yapperville).</p>
+        
+        <p>i'm an infp :3 (idk y that matters tho; yolo).</p>
+ 
+        <p>i'm a taurus too (except i have an ed -- either i over eat or under eat HAH).</p>
+        
+        <p>i wanna learn how to code SOOOO bad :(.</p>
+        
+        <p>i hope you have a nice day :).</p>      
+ 
+    </li>
+    <!-----------END OF ABOUT ME CONTENT------------>
+ 
+ 
+ 
+ 
+ 
+    <!----------------LINKS CONTENT----------------->
+ 
+    <li id="t2" class="tab-content">
+ 
+        <h2><span class="header2">Links</span></h2>
+ 
+        <!--------to add/remove a section, copy/delete from here:------>
+        <div class="links-wrap">
+            <div class="links-title">i love you</div>
+            <div class="links">
+            <a href="https://www.instagram.com/siuresu/" target="_blank">instagram</a>
+            <a href="https://open.spotify.com/user/arwoighxxllzglcj5eieh8zyb?si=2cd34fa81364495e" target="_blank">spotify</a>
+            <a>mwah <3</a>
+            </div>
+        </div>
+        <!------------------------to here------------------------>
+    </li>
+ 
+    <!--------------END OF LINKS CONTENT------------->
+ 
+ 
+ 
+ 
+ 
+    <!-----------------F.A.Q CONTENT---------------->
+ 
+    <li id="t3" class="tab-content">
+ 
+        <h2><span class="header2">Message</span></h2>
+ 
+        <!----to add or remove a question copy/delete from here:------>
+        <div class="question">why don't you like using mainstream socmeds?</div>
+        <div class="answer">because i'm a loser</div>
+        <!-----to here------->
+        
+        <div id="ask-box">
+        <p><iframe frameborder="0" scrolling="no" width="100%" height="190" src="https://www.tumblr.com/ask_form/siuresu.tumblr.com" style="background-color:transparent; overflow:hidden;" id="ask_form"></iframe><!--[if IE]><script type="text/javascript">document.getElementById('ask_form').allowTransparency=true;</script><![endif]--></p>
+        </div>
+    </li>
+ 
+    <!-------------END OF F.A.Q. CONTENT----------->
+ 
+ 
+ 
+ 
+ 
+    <!----------------BLOGROLL CONTENT-------------->
+ 
+    <li id="t4" class="tab-content">
+        <h2><span class="header2">Blogroll</span></h2>
+        <div id="br">
+        {block:Following}
+            {block:Followed}
+                <div id="following"> 
+                <a href="{FollowedURL}" target="_blank" title="{FollowedName}">
+                <img src="{FollowedPortraitURL-40}" class="portrait"/></a>
+                </div>
+            {/block:Followed}
+        {/block:Following}
+        </div>
+    </li>
+ 
+    <!-------------END OF BLOGROLL CONTENT----------->
+ 
+</ul>
+</div>
+</div> 
+ 
+    <!---------------------SIDEBAR-------------------->
+ 
+    <div id="pic">
+ 
+            <!----put image link here---->
+            <img src="https://i.pinimg.com/564x/11/0c/75/110c759f88b4a3cf86cf11b2a5215dd8.jpg">
+ 
+    </div>
+ 
+    <div id="headr">
+    <div id="tabs-bar">
+        <ul id="tabs-nav">
+            <li><a href="#t1" class="first-link">About Me</a></li>
+	        <li><a href="#t2" class="second-link">Links</a></li>
+	        <li><a href="#t3" class="third-link">F.A.Q.</a></li>
+            <li><a href="#t4" class="fourth-link">Blogroll</a></li>
+        </ul>
+    </div>
+ 
+ 
+</ul>
+</div>
+</div>
+ 
+<div id="navi">
+    <a href="https://siuresu.tumblr.com/">< back</a>
+    | 
+    <!----put your links here---->
+    <a href="https://www.instagram.com/siuresu/">insta</a> 
+    |
+    <a href="https://twitter.com/siuresu">twt</a>
+    |
+    <!---------------------------->
+    <a href="https://tumblr.com/dashboard">dash ></a>
+</div>
+ 
+ 
+<!-----theme credit (dont remove)----->
+<div id="credit">
+    <a href="https://jaebium.tumblr.com" title="credit" target="_blank">J</a>
+</div>
+ 
+ 
+</body>
+</html>
